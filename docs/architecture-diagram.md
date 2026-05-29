@@ -1,5 +1,11 @@
 # Architecture Diagram - PetClinic MCP Demo
 
+## À propos du projet
+
+Spring PetClinic REST est une API de gestion de clinique vétérinaire. Elle permet de gérer les propriétaires, leurs animaux, les vétérinaires et les visites. Application Spring Boot avec architecture en couches.
+
+## Architecture de la démo
+
 Ce diagramme illustre l'architecture complète de la démonstration PetClinic avec IBM Bob et le serveur MCP.
 
 ```mermaid
