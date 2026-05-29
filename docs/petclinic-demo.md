@@ -23,7 +23,7 @@ flowchart LR
     API --> DB["H2 Database<br/>sample data"]
 
     Bob -->|"MCP tools"| MCP
-    Bob -->|"GitHub MCP"| GitHub["GitHub<br/>Issue + branche"]
+    Bob -->|"Git commands"| GitHub["GitHub<br/>Issue + branche"]
 
     classDef bob fill:#EDF2FF,stroke:#4C6FFF,stroke-width:2px,color:#14213D;
     classDef repo fill:#E8F3FF,stroke:#2F80ED,stroke-width:2px,color:#1B335F;
@@ -48,7 +48,7 @@ Assistant IA qui :
 - Génère de la documentation standardisée
 - Crée le serveur MCP
 - Utilise les outils MCP pour interagir avec l'API
-- Intègre avec GitHub via GitHub MCP pour la gestion des issues et branches
+- Intègre avec GitHub via commandes Git standard
 
 ### 📦 Backend Repository (spring-petclinic-rest)
 Repository Spring Boot existant contenant :
@@ -88,11 +88,11 @@ Base de données en mémoire contenant :
 - Types d'animaux et spécialités
 
 ### 🐙 GitHub
-Intégration GitHub via GitHub MCP pour :
-- Gestion des issues (list_issues, issue_read, issue_write)
-- Création de branches (create_branch, list_branches)
-- Pull requests (create_pull_request, list_pull_requests)
-- Code reviews (pull_request_review_write)
+Intégration GitHub via commandes Git pour :
+- Gestion des issues
+- Création de branches
+- Pull requests
+- Code reviews
 
 ## Flux de données
 
@@ -101,7 +101,7 @@ Intégration GitHub via GitHub MCP pour :
 3. **Génération** : Bob crée le serveur MCP adapter
 4. **Interaction** : Bob utilise les outils MCP pour interroger l'API
 5. **Persistance** : L'API persiste les données dans H2
-6. **Collaboration** : Bob utilise GitHub MCP pour la gestion du code
+6. **Collaboration** : Bob utilise les commandes Git pour la gestion du code
 
 ## Technologies utilisées
 
