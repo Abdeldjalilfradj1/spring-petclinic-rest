@@ -1,0 +1,31 @@
+{
+  "name": "petclinic-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Spring PetClinic REST API - Read-only tools",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "petclinic-mcp-server": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "petclinic",
+    "spring-boot",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
