@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "petclinic": {
+      "command": "node",
+      "args": [
+        "/Users/abfra/2026/Metro/AF Demo/spring-petclinic-rest/petclinic-mcp-server/src/index.js"
+      ],
+      "env": {
+        "PETCLINIC_API_URL": "http://localhost:9966/petclinic/api"
+      },
+      "alwaysAllow": [
+        "list_owners",
+        "get_owner",
+        "list_pets",
+        "get_pet",
+        "get_owner_pet",
+        "list_vets",
+        "get_vet",
+        "get_visit",
+        "list_pet_types",
+        "get_pet_type",
+        "get_specialty"
+      ]
+    },
+    "github": {
+      "command": "/opt/homebrew/bin/docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+      },
+      "alwaysAllow": []
+    }
+  }
+}

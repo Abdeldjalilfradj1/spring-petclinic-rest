@@ -24,3 +24,6 @@ springboot-petclinic-server/
 
 # newman reports
 ./src/test/postman/reports/
+
+# Ansible local files
+.ansible/
